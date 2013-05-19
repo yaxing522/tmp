@@ -189,7 +189,6 @@ int main(int argc, char * argv[])
 
 		/* put the chess down */
 		put(x, y, who);
-		step++;
 
 		printf("step %d : %d %d [Player %d]\n", step, x, y, who); 
 
@@ -200,7 +199,7 @@ int main(int argc, char * argv[])
 		{
 			printf("player %d wins! (%d %d) \n", who, x, y);
 			break;
-		}
+		}sleep(2);
 	}
 
 	printf("game over!\n");
